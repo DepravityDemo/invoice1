@@ -1,0 +1,258 @@
+[
+  {
+    "CommodityUnit": [
+      {
+        "row": "1",
+        "word": "\u628a"
+      }
+    ],
+    "PurchaserAddress": "",
+    "SheetNum": "",
+    "CommodityType": [
+      {
+        "row": "1",
+        "word": "DI2607"
+      }
+    ],
+    "TotalAmount": "16.37",
+    "Checker": "\u738b\u9646",
+    "PurchaserBank": "",
+    "Agent": "\u5426",
+    "Password": "6<4-5>5<8315742>+96*80/>05/+*//62278124*53*395/-67/3231*510<101*17681868-9--700++>0*12<2/62278124*53*395-233",
+    "InvoiceTypeOrg": "\u5409\u6797\u589e\u503c\u7a0e\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "InvoiceCodeConfirm": "022002200111",
+    "TotalTax": "2.13",
+    "ServiceType": "\u7535\u5668\u8bbe\u5907",
+    "CommodityTaxRate": [
+      {
+        "row": "1",
+        "word": "13%"
+      }
+    ],
+    "CommodityTax": [
+      {
+        "row": "1",
+        "word": 2.13
+      }
+    ],
+    "SellerBank": "\u4e2d\u56fd\u5efa\u8bbe\u94f6\u884c\u957f\u6625\u7b2c\u4e00\u6c7d\u8f66\u96c6\u56e2\u516c\u53f8\u652f\u884c22050146030000002786",
+    "Remarks": "\u8ba2\u5355\u53f7:246243548858",
+    "SellerAddress": "\u957f\u6625\u5e02\u957f\u5fb7\u65b0\u533a\u5fb7\u8d24\u8def1835\u53f7\u4eac\u4e1c\u4e9a\u6d32\u4e00\u53f7101\u5ba4024-67859504",
+    "NoteDrawer": "\u738b\u6885",
+    "InvoiceTag": "\u5176\u4ed6",
+    "InvoiceNumConfirm": "03485448",
+    "OnlinePay": "",
+    "Payee": "\u674e\u601d",
+    "CommodityName": [
+      {
+        "row": "1",
+        "word": "*\u5176\u4ed6\u673a\u68b0\u8bbe\u5907*\u5f97\u529b(dei)\u9ad8\u78b3\u94a2\u5e26\u5200\u53e37\u6863\u591a\u529f\u80fd\u8f7b\u4fbf\u7535\u5de5\u6d4b\u7ebf\u94b3\u7535\u5b50\u7535\u5de5\u624b\u52a8\u5de5\u51770.6-2.6mm\u5e94\u6025"
+      }
+    ],
+    "CommodityVehicleType": [],
+    "InvoiceCode": "022002200111",
+    "AmountInWords": "\u58f9\u62fe\u634c\u5706\u4f0d\u89d2",
+    "AmountInFiguers": "18.50",
+    "City": "",
+    "InvoiceType": "\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "CommodityEndDate": [],
+    "PurchaserName": "\u4e2a\u4eba",
+    "InvoiceDate": "2022\u5e7408\u670806\u65e5",
+    "CommodityNum": [
+      {
+        "row": "1",
+        "word": "1"
+      }
+    ],
+    "PurchaserRegisterNum": "",
+    "MachineCode": "661923664057",
+    "CommodityPlateNum": [],
+    "CheckCode": "73512311730738533092",
+    "SellerRegisterNum": "91220107MA17A2N28J",
+    "CommodityPrice": [
+      {
+        "row": "1",
+        "word": "16.37"
+      }
+    ],
+    "CommodityStartDate": [],
+    "SellerName": "\u957f\u6625\u4eac\u4e1c\u666e\u6c47\u8d38\u6613\u6709\u9650\u516c\u53f8",
+    "CommodityAmount": [
+      {
+        "row": "1",
+        "word": "16.37"
+      }
+    ],
+    "Province": "\u5409\u6797\u7701",
+    "InvoiceNum": "03485448"
+  },
+  {
+    "CommodityUnit": [
+      {
+        "row": "1",
+        "word": "\u4ef6"
+      }
+    ],
+    "PurchaserAddress": "",
+    "SheetNum": "",
+    "CommodityType": [
+      {
+        "row": "1",
+        "word": "5*360*300"
+      }
+    ],
+    "TotalAmount": "400.00",
+    "Checker": "\u90b1\u666f\u9e92",
+    "PurchaserBank": "",
+    "Agent": "\u5426",
+    "Password": "009244-/<+536+119*<*91><8860>861569>910*8+80>68>11>744/469>46936811897*165-584/53>+45+1>18<-**746001560319-61>/0",
+    "InvoiceTypeOrg": "\u6df1\u5733\u589e\u503c\u7a0e\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "InvoiceCodeConfirm": "044032200111",
+    "TotalTax": "***",
+    "ServiceType": "\u5176\u4ed6",
+    "CommodityTaxRate": [
+      {
+        "row": "1",
+        "word": "\u514d\u7a0e"
+      }
+    ],
+    "CommodityTax": [
+      {
+        "row": "1",
+        "word": 0.0
+      }
+    ],
+    "SellerBank": "\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\u6df1\u5733\u65b0\u6c99\u652f\u884c4000032509201636428",
+    "Remarks": "",
+    "SellerAddress": "\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u65b0\u6865\u8857\u9053\u65b0\u6865\u793e\u533a\u6d0b\u4ed4\u897f\u56db\u5df71\u53f780513828481107",
+    "NoteDrawer": "\u5f20\u82d7\u5a1f",
+    "InvoiceTag": "\u5176\u4ed6",
+    "InvoiceNumConfirm": "12249078",
+    "OnlinePay": "",
+    "Payee": "\u5f6d\u7433",
+    "CommodityName": [
+      {
+        "row": "1",
+        "word": "*\u6a61\u80f6\u5236\u54c1*\u7845\u80f6\u5bc6\u5c01\u4ef6"
+      }
+    ],
+    "CommodityVehicleType": [],
+    "InvoiceCode": "044032200111",
+    "AmountInWords": "\u8086\u4f70\u5706\u6574",
+    "AmountInFiguers": "400.00",
+    "City": "\u6df1\u5733\u5e02",
+    "InvoiceType": "\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "CommodityEndDate": [],
+    "PurchaserName": "\u5409\u6797\u5927\u5b66",
+    "InvoiceDate": "2022\u5e7408\u670806\u65e5",
+    "CommodityNum": [
+      {
+        "row": "1",
+        "word": "5"
+      }
+    ],
+    "PurchaserRegisterNum": "121000004232040648",
+    "MachineCode": "917102255893",
+    "CommodityPlateNum": [],
+    "CheckCode": "10217667945142831362",
+    "SellerRegisterNum": "91440300MA5G918F66",
+    "CommodityPrice": [
+      {
+        "row": "1",
+        "word": "80"
+      }
+    ],
+    "CommodityStartDate": [],
+    "SellerName": "\u6df1\u5733\u5e02\u9760\u8c31\u5144\u5f1f\u5b9e\u4e1a\u6709\u9650\u516c\u53f8",
+    "CommodityAmount": [
+      {
+        "row": "1",
+        "word": "400.00"
+      }
+    ],
+    "Province": "\u5e7f\u4e1c\u7701",
+    "InvoiceNum": "12249078"
+  },
+  {
+    "CommodityUnit": [
+      {
+        "row": "1",
+        "word": "\u652f"
+      }
+    ],
+    "PurchaserAddress": "\u5409\u6797\u7701\u957f\u6625\u5e02\u524d\u8fdb\u5927\u88572699\u53f7:0431-85166245",
+    "SheetNum": "",
+    "CommodityType": [],
+    "TotalAmount": "92.00",
+    "Checker": "\u8c37\u6587\u661f",
+    "PurchaserBank": "\u4e2d\u56fd\u94f6\u884c\u957f\u6625\u524d\u8fdb\u5927\u8857\u652f\u884c:160402501175",
+    "Agent": "\u5426",
+    "Password": "005*0-6213020*34<7492*3741-3--2964>3>197>-*730<>1+<65>70**+*52>5>88+551572941-740<4>>13422<+-0<6<015/->19675-8-",
+    "InvoiceTypeOrg": "\u5317\u4eac\u589e\u503c\u7a0e\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "InvoiceCodeConfirm": "011002200511",
+    "TotalTax": "***",
+    "ServiceType": "\u5176\u4ed6",
+    "CommodityTaxRate": [
+      {
+        "row": "1",
+        "word": "\u514d\u7a0e"
+      }
+    ],
+    "CommodityTax": [
+      {
+        "row": "1",
+        "word": 0.0
+      }
+    ],
+    "SellerBank": "\u5317\u4eac\u519c\u5546\u94f6\u884c\u6f5e\u57ce\u652f\u884c0705000103000012577",
+    "Remarks": "",
+    "SellerAddress": "\u5317\u4eac\u5e02\u5317\u4eac\u7ecf\u6d4e\u6280\u672f\u5f00\u53d1\u533a\u6587\u5316\u56ed\u897f\u8def8\u53f7\u966229\u53f7\u697c19\u5c42220813811256440",
+    "NoteDrawer": "\u90ed\u8273\u8389",
+    "InvoiceTag": "\u5176\u4ed6",
+    "InvoiceNumConfirm": "31165111",
+    "OnlinePay": "",
+    "Payee": "\u90ed\u8273\u8292",
+    "CommodityName": [
+      {
+        "row": "1",
+        "word": "*\u5de5\u4e1a\u4eea\u8868*\u6e29\u5ea6\u8ba1"
+      }
+    ],
+    "CommodityVehicleType": [],
+    "InvoiceCode": "011002200511",
+    "AmountInWords": "\u7396\u62fe\u8d30\u5706\u6574",
+    "AmountInFiguers": "92.00",
+    "City": "",
+    "InvoiceType": "\u7535\u5b50\u666e\u901a\u53d1\u7968",
+    "CommodityEndDate": [],
+    "PurchaserName": "\u5409\u6797\u5927\u5b66",
+    "InvoiceDate": "2022\u5e7408\u670806\u65e5",
+    "CommodityNum": [
+      {
+        "row": "1",
+        "word": "1"
+      }
+    ],
+    "PurchaserRegisterNum": "121000004232040648",
+    "MachineCode": "917200852771",
+    "CommodityPlateNum": [],
+    "CheckCode": "12477197700776665026",
+    "SellerRegisterNum": "1110400MA021C0X7D",
+    "CommodityPrice": [
+      {
+        "row": "1",
+        "word": "92"
+      }
+    ],
+    "CommodityStartDate": [],
+    "SellerName": "\u5317\u4eac\u6c49\u4f17\u4eea\u5668\u4eea\u8868\u6709\u9650\u516c\u53f8",
+    "CommodityAmount": [
+      {
+        "row": "1",
+        "word": "92.00"
+      }
+    ],
+    "Province": "\u5317\u4eac",
+    "InvoiceNum": "31165111"
+  }
+]

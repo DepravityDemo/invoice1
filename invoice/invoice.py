@@ -33,10 +33,7 @@ class Invoice(object):
         self.CommodityTax= fp_content['CommodityTax'] # 商品税额 需要搭配[row]['word']
         self.CommodityAmount= fp_content['CommodityAmount'] # 商品金额 需要搭配[row]['word']
         self.fp_name = pdf_name
-    def get_invoice_num(self):
-        return self.InvoiceNum
-    def get_invoice_seller(self):
-        return self.SellerName
+
     def print_check_sheet(self,pdf_name):
         error_flag = 0
         wb = xlrd.open_workbook('1.xls') #打开模板文件
@@ -103,15 +100,18 @@ def get_auth_key():
     return json.loads(s.text)['access_token']
 
 
-def get_invoce_data(pdf_name):
+def get_invoce_class(fp_content,pdf_name):
     """
     解析发票数据，返回发票类
     :param pdf_name:
     :return: class Invoice
     """
+    fp = Invoice(fp_content, pdf_name)
+    return fp
+
+def get_invoce_data(pdf_name):
     m_request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/vat_invoice"
     f = open(pdf_name, 'rb')
-    # print(f.read());
     pdf = base64.b64encode(f.read())
     params = {"pdf_file": pdf}
     access_token = get_auth_key()
@@ -119,10 +119,37 @@ def get_invoce_data(pdf_name):
     headers = {'content-type': 'application/x-www-form-urlencoded'}
     response = requests.post(m_request_url, data=params, headers=headers)
     fp_content = response.json()['words_result']
-    fp = Invoice(fp_content,pdf_name)
-    return fp
+    return fp_content
 
 
+def get_undeal_pdf():
+    """
+    获取未处理的pdf文件
+    :return: 未处理pdf列表
+    """
+    pdf_list = []
+
+    for i in os.listdir():
+        if i[-4:]=='.pdf' and i[0:4]!='done':
+            pdf_list.append(i)
+    return pdf_list
+
+def get_exist_data():
+    all_pdf = get_all_pdf()
+    try:
+        with open("fp_data.json", 'rb') as f:
+            fp_data = json.loads(f.read())
+    except:
+        fp_data = []
+    rev_list = []
+    print(fp_data)
+    for i in fp_data:
+        for j in all_pdf:
+            if (i['InvoiceNum'] in j):
+                rev_list.append(i)
+                print("获取到已存在数据",i['InvoiceNum'])
+    print(f"共获取到{len(rev_list)}")
+    return rev_list
 
 
 def get_all_pdf():
@@ -151,13 +178,16 @@ def get_num_and_coperate():
 
 
 
+
 def rename_pdf(pdf_name,fp):
     name = json.loads(get_abstract(fp.CommodityName[0]['word']))['data']['ke'][0]['word'] +'_'+\
            json.loads(get_abstract(fp.CommodityName[0]['word']))['data']['ke'][1]['word'] +'_'+\
            json.loads(get_abstract(fp.CommodityName[0]['word']))['data']['ke'][0]['word']
-    new_name = fp.AmountInFiguers + '_' + name + ".pdf"
+    new_name = 'done_'+fp.InvoiceNum +'_'+ fp.AmountInFiguers + '_' + name + ".pdf"
     os.rename(pdf_name, new_name)
+    fp.fp_name = new_name
     print("rename:",pdf_name,"to",new_name)
+    return new_name
 
 
 def get_abstract(TEXT):
