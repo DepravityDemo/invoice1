@@ -12,3 +12,4 @@
 /.idea
 /build
 /dist
+/.gitignore
