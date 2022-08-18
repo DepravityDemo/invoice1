@@ -9,3 +9,6 @@
 /xf_invoice.py
 /xf_secret.txt
 /venv
+/.idea
+/build
+/dist
