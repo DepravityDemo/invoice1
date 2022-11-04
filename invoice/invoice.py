@@ -111,7 +111,7 @@ def get_invoce_class(fp_content,pdf_name):
 
 def get_invoce_data(pdf_name):
     m_request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/vat_invoice"
-    f = open(pdf_name, 'rb')
+    f = open('./invoice_pdf/'+pdf_name, 'rb')
     pdf = base64.b64encode(f.read())
     params = {"pdf_file": pdf}
     access_token = get_auth_key()
@@ -129,12 +129,15 @@ def get_undeal_pdf():
     """
     pdf_list = []
 
-    for i in os.listdir():
+    for i in os.listdir('invoice_pdf'):
         if i[-4:]=='.pdf' and i[0:4]!='done':
             pdf_list.append(i)
     return pdf_list
 
 def get_exist_data():
+    """
+    返回发票列表
+    """
     all_pdf = get_all_pdf()
     try:
         with open("fp_data.json", 'rb') as f:
@@ -142,7 +145,7 @@ def get_exist_data():
     except:
         fp_data = []
     rev_list = []
-    print(fp_data)
+    #print(fp_data)
     for i in fp_data:
         for j in all_pdf:
             if (i['InvoiceNum'] in j):
@@ -158,22 +161,28 @@ def get_all_pdf():
     :return:
     """
     pdf_list = []
-    for i in os.listdir():
+    for i in os.listdir('invoice_pdf'):
         if ".pdf" in i:
             pdf_list.append(i)
     return pdf_list
 
+def write_all_to_excel():
+    fp_data = get_exist_data()
+    for i in fp_data:
+        fp = get_invoce_class(i,'null')
+        fp.print_check_sheet('null')
 
-def get_num_and_coperate():
-    pdf_list = get_all_pdf()
-    num = ""
-    name = ""
-    for i in pdf_list:
-        fp = get_invoce_data(i)
-        num+=fp.get_invoice_num() + ";"
-        name+=fp.get_invoice_seller() + ";"
-    print(num)
-    print(name)
+
+
+def get_all_num_and_coperate():
+    fp_data = get_exist_data()
+    nums = ""
+    names = ""
+    for i in fp_data:
+        nums += i['InvoiceNum'] + ';'
+        names += i['SellerName'] + ';'
+    print(nums)
+    print(names)
 
 
 
@@ -184,7 +193,7 @@ def rename_pdf(pdf_name,fp):
            json.loads(get_abstract(fp.CommodityName[0]['word']))['data']['ke'][1]['word'] +'_'+\
            json.loads(get_abstract(fp.CommodityName[0]['word']))['data']['ke'][0]['word']
     new_name = 'done_'+fp.InvoiceNum +'_'+ fp.AmountInFiguers + '_' + name + ".pdf"
-    os.rename(pdf_name, new_name)
+    os.rename('./invoice_pdf/'+pdf_name, './invoice_pdf/'+ new_name)
     fp.fp_name = new_name
     print("rename:",pdf_name,"to",new_name)
     return new_name
